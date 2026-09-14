@@ -1,7 +1,7 @@
 import React from 'react';
-import { Search, X, Filter, ArrowUpDown, Tag, Check, SlidersHorizontal } from 'lucide-react';
+import { Search, X, Filter, ArrowUpDown, Tag } from 'lucide-react';
 import { Category, FilterState, Priority, SortOption, StatusFilter } from '../types';
-import { CATEGORY_COLOR_MAP, PRIORITY_CONFIG } from '../utils/storage';
+import { CATEGORY_COLOR_MAP } from '../utils/storage';
 
 interface FilterBarProps {
   filters: FilterState;

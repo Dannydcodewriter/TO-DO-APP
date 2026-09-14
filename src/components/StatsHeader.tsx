@@ -7,8 +7,6 @@ import {
   Upload,
   Volume2,
   VolumeX,
-  CheckCircle2,
-  ListOrdered,
 } from 'lucide-react';
 
 interface StatsHeaderProps {

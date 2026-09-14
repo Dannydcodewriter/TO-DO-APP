@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'motion/react';
 import {
   Check,
-  Calendar,
   Trash2,
   Edit2,
   Tag,
@@ -27,7 +26,6 @@ export const TaskItem: React.FC<TaskItemProps> = ({
   onDelete,
   onEdit,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
   const priorityInfo = PRIORITY_CONFIG[task.priority] || PRIORITY_CONFIG.low;
   const categoryBadge = getCategoryBadge(category?.color || 'stone');
   const dueDateInfo = formatDueDate(task.dueDate);
@@ -40,8 +38,6 @@ export const TaskItem: React.FC<TaskItemProps> = ({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.96, transition: { duration: 0.15 } }}
       transition={{ duration: 0.2 }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       className={`group relative flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl border transition-all duration-200 ${
         task.completed
           ? 'bg-stone-50/70 border-stone-200/60 opacity-75'

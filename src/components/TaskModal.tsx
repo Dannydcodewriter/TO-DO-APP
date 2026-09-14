@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Calendar, Tag, AlertCircle } from 'lucide-react';
+import { X, Tag, AlertCircle } from 'lucide-react';
 import { Category, Priority, Task } from '../types';
 import { PRIORITY_CONFIG } from '../utils/storage';
 

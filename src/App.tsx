@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
-import { CheckSquare, Plus, Sparkles, FilterX, CheckCircle, Award } from 'lucide-react';
-import { Category, FilterState, Priority, Task } from './types';
+import { AnimatePresence } from 'motion/react';
+import { CheckSquare, FilterX, Award } from 'lucide-react';
+import { Category, FilterState, Task } from './types';
 import {
   loadCategories,
   saveCategories,
   loadTasks,
   saveTasks,
-  DEFAULT_CATEGORIES,
   PRIORITY_CONFIG,
   exportDataAsJSON,
   STORAGE_SOUND_KEY,

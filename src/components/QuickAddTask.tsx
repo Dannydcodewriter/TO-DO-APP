@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import { Plus, Calendar, Tag, AlertCircle, Sparkles, ChevronDown } from 'lucide-react';
+import { Plus, Tag, ChevronDown } from 'lucide-react';
 import { Category, Priority, Task } from '../types';
-import { PRIORITY_CONFIG, CATEGORY_COLOR_MAP } from '../utils/storage';
+import { PRIORITY_CONFIG } from '../utils/storage';
 
 interface QuickAddTaskProps {
   categories: Category[];
@@ -44,7 +44,6 @@ export const QuickAddTask: React.FC<QuickAddTaskProps> = ({
     setDueDate(d.toISOString().split('T')[0]);
   };
 
-  const selectedCategory = categories.find((c) => c.id === categoryId) || categories[0];
   const priorityInfo = PRIORITY_CONFIG[priority];
 
   return (
