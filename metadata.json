@@ -1,0 +1,6 @@
+{
+  "name": "Simple To-Do",
+  "description": "A simple to-do application featuring categories, priority levels, and local data storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
