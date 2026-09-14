@@ -64,7 +64,7 @@ export const StatsHeader: React.FC<StatsHeaderProps> = ({
         <div>
           <div className="flex items-center gap-2.5">
             <h1 id="app-title" className="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900">
-              Tasks
+              Task Board
             </h1>
             <span
               id="active-count-badge"
